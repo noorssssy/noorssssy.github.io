@@ -1,92 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>FINWIRE — Markets, Business &amp; Economy</title>
-<meta name="description" content="Client-side financial news aggregator: Bloomberg, Reuters, CNBC Indonesia, Kontan, IDN Financials." />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Source2PortTools - Port Source 1 Assets to Half-Life: Alyx & S2FM</title>
+<meta name="description" content="Source2PortTools is a one-click porting tool for Half-Life: Alyx and Source 2 Filmmaker. Convert Source 1 models, textures, materials and particles into Source 2 formats with a simple Windows application.">
+<meta name="keywords" content="game-modding, half-life-alyx, modding, porting, s2fm, source-engine, source-filmmaker, source2, vmat, vmdl, Source 1 to Source 2, port models to Alyx, vmdl converter, vmat converter, Source 2 Filmmaker tools">
+<meta name="author" content="Source2PortTools">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#4f46e5">
+<link rel="canonical" href="https://github.com/noorssssy/Source2PortTools">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Source2PortTools - Port Source 1 Assets to Half-Life: Alyx & S2FM">
+<meta property="og:description" content="Convert Source 1 models, textures, materials and particles into Source 2 formats for Half-Life: Alyx and Source 2 Filmmaker in one click.">
+<meta property="og:url" content="https://github.com/noorssssy/Source2PortTools">
+<meta property="og:site_name" content="Source2PortTools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Source2PortTools - Port Source 1 Assets to Half-Life: Alyx & S2FM">
+<meta name="twitter:description" content="One-click porting tool for Half-Life: Alyx and Source 2 Filmmaker. Models, textures, materials and particles converted for you.">
 </head>
-<body>
+<body style="margin:0; padding:0; background-color:#f4f6fb; color:#1f2933; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size:17px; line-height:1.75; -webkit-font-smoothing:antialiased;">
 
-<!-- ==================== MASTHEAD ==================== -->
-<header class="masthead">
-  <div class="masthead-inner">
-    <a class="brand" href="./" aria-label="FINWIRE home" onclick="switchView('news'); return false;">
-      <span class="brand-mark" aria-hidden="true"></span>
-      <span class="brand-text">FIN<span class="accent">WIRE</span></span>
-    </a>
+<div style="max-width:880px; margin:0 auto; padding:32px 20px 64px 20px;">
 
-    <p class="tagline" data-i18n="tagline">Markets · Business · Economy</p>
+  <div style="background-color:#ffffff; border-radius:16px; box-shadow:0 6px 24px rgba(15,23,42,0.08); padding:36px 28px; margin-bottom:28px;">
 
-    <nav class="main-nav">
-      <button type="button" id="navNews" class="nav-btn active">News</button>
-      <button type="button" id="navStocks" class="nav-btn">Markets</button>
-    </nav>
+    <h1 style="font-size:2rem; line-height:1.3; margin:0 0 18px 0; color:#111827; font-weight:800; letter-spacing:-0.02em;">🎮 Source2PortTools - Bring Your Source 1 Assets Forward</h1>
 
-    <div class="masthead-tools">
-      <div class="watch-box">
-        <input id="watchInput" type="text" autocomplete="off" spellcheck="false"
-               data-i18n-ph="watchPh" placeholder="Add watchlist keyword…" aria-label="Add watchlist keyword" />
-        <button id="watchAdd" class="btn btn-mini" type="button" aria-label="Add keyword">+</button>
-      </div>
+    <p style="margin:0 0 24px 0; font-size:1.05rem; color:#374151;">A friendly Windows tool that moves your old Source 1 models, textures, materials and particles into Source 2 so they work in Half-Life: Alyx and Source 2 Filmmaker. No coding, no command lines, no guesswork.</p>
 
-      <button id="markAllRead" class="btn" type="button" data-i18n="markAllRead">Mark all read</button>
+    <p style="margin:0 0 10px 0;">
+      <a href="https://github.com/noorssssy/Source2PortTools/releases" style="display:inline-block; background-image:linear-gradient(135deg,#4f46e5 0%,#db2777 100%); color:#ffffff; text-decoration:none; font-weight:700; font-size:1.05rem; padding:16px 34px; border-radius:12px; box-shadow:0 8px 20px rgba(79,70,229,0.32);">⬇️ Download Source2PortTools</a>
+    </p>
 
-      <div class="lang-toggle" role="group" aria-label="Language">
-        <button type="button" data-lang="en" class="active">EN</button>
-        <button type="button" data-lang="id">ID</button>
-      </div>
+    <p style="margin:14px 0 0 0; font-size:0.95rem; color:#6b7280;">Visit this link to download the application.</p>
 
-      <button id="refreshBtn" class="btn btn-icon" type="button" data-i18n-title="refresh" title="Refresh">
-        <span aria-hidden="true">⟳</span>
-      </button>
-    </div>
   </div>
 
-  <div class="watch-chips" id="watchChips"></div>
-</header>
+  <div style="background-color:#ffffff; border-radius:16px; box-shadow:0 6px 24px rgba(15,23,42,0.08); padding:36px 28px; margin-bottom:28px;">
 
-<!-- ==================== LIVE TICKER ==================== -->
-<div class="ticker-wrap" aria-hidden="true">
-  <div class="ticker-track" id="tickerTrack"></div>
+    <h2 style="font-size:1.5rem; margin:0 0 16px 0; color:#111827; font-weight:700;">✨ What Source2PortTools Does</h2>
+
+    <p style="margin:0 0 16px 0;">Half-Life: Alyx and Source 2 Filmmaker run on a newer game engine than the classics people have been modding for years. That newer engine reads models, materials and effects in different file formats. Normally, moving an asset from one engine to the other means opening several separate programs, converting models in one place, fixing materials somewhere else, and then hand-editing text files until something finally loads. It is slow, and it is easy to break things along the way.</p>
+
+    <p style="margin:0 0 16px 0;">Source2PortTools bundles all of that into a single window. You point it at the files you already have, press one button, and it produces the Source 2 versions of those files in the correct folder layout. The tool handles the repetitive conversion work so you can spend your time building your map, scene or add-on instead of fighting file formats.</p>
+
+    <p style="margin:0 0 16px 0;">It is built for people who want results without becoming engine experts. Everything is done through regular buttons and file pickers. If you can copy a folder and click a button, you can use this tool.</p>
+
+    <h2 style="font-size:1.5rem; margin:32px 0 16px 0; color:#111827; font-weight:700;">🧩 What You Can Port</h2>
+
+    <p style="margin:0 0 16px 0;">Source2PortTools focuses on the four asset types modders and filmmakers reach for most often:</p>
+
+    <ul style="margin:0 0 16px 0; padding-left:22px; color:#374151;">
+      <li style="margin-bottom:12px;"><strong>Models</strong> — character, prop and weapon models are converted into Source 2 model files with their skeleton and animation data intact, ready to drop into a map or a scene.</li>
+      <li style="margin-bottom:12px;"><strong>Textures</strong> — image files are converted into the texture format the new engine expects, so surfaces appear correctly instead of showing up as flat pink squares.</li>
+      <li style="margin-bottom:12px;"><strong>Materials</strong> — the rules that decide how a surface looks, reflects light and reacts to the world are rebuilt as Source 2 material files that point at your freshly converted textures.</li>
+      <li style="margin-bottom:12px;"><strong>Particles</strong> — smoke, sparks, dust and other effects are translated so they render properly inside Source 2 Filmmaker.</li>
+    </ul>
+
+    <p style="margin:0 0 0 0;">Because the tool converts these together in one pass, the links between a model, its materials and its textures stay connected. That is the part that usually breaks when people convert things by hand.</p>
+
+  </div>
+
+  <div style="background-color:#ffffff; border-radius:16px; box-shadow:0 6px 24px rgba(15,23,42,0.08); padding:36px 28px; margin-bottom:28px;">
+
+    <h2 style="font-size:1.5rem; margin:0 0 16px 0; color:#111827; font-weight:700;">🚀 Getting Started</h2>
+
+    <p style="margin:0 0 16px 0;">Getting the tool onto your computer takes only a couple of minutes. Follow these steps in order:</p>
+
+    <ol style="margin:0 0 20px 0; padding-left:22px; color:#374151;">
+      <li style="margin-bottom:14px;"><strong>Open the download page.</strong> Go to <a href="https://github.com/noorssssy/Source2PortTools/releases" style="color:#4f46e5; font-weight:600; text-decoration:underline;">https://github.com/noorssssy/Source2PortTools/releases</a>. Visit this link to download the application.</li>
+      <li style="margin-bottom:14px;"><strong>Pick the newest release.</strong> The releases page lists versions from newest to oldest. The one at the top is the one you want, since it contains the latest fixes and format support.</li>
+      <li style="margin-bottom:14px;"><strong>Save the file.</strong> Choose the download file attached to that release and save it somewhere you can find easily, such as your Downloads folder or your Desktop.</li>
+      <li style="margin-bottom:14px;"><strong>Keep it out of protected folders.</strong> Avoid running the tool from inside Program Files or any folder Windows guards closely. A simple folder like <em>C:\Source2PortTools</em> works well and prevents permission problems later.</li>
+      <li style="margin-bottom:0;"><strong>Launch it.</strong> Open the application. If Windows shows a blue "Windows protected your PC" notice because the file was downloaded from the internet, click <em>More info</em> and then <em>Run anyway</em>. This is the standard notice Windows shows for small independent tools.</li>
+    </ol>
+
+    <p style="margin:0 0 0 0;">
+      <a href="https://github.com/noorssssy/Source2PortTools/releases" style="display:inline-block; background-color:#0f766e; color:#ffffff; text-decoration:none; font-weight:700; font-size:1rem; padding:14px 30px; border-radius:12px; box-shadow:0 6px 18px rgba(15,118,110,0.28);">📥 Go to the Download Page</a>
+    </p>
+
+  </div>
+
+  <div style="background-color:#ffffff; border-radius:16px; box-shadow:0 6px 24px rgba(15,23,42,0.08); padding:36px 28px; margin-bottom:28px;">
+
+    <h2 style="font-size:1.5rem; margin:0 0 16px 0; color:#111827; font-weight:700;">🖥️ Before You Begin</h2>
+
+    <p style="margin:0 0 16px 0;">A few small preparations make the first run smoother:</p>
+
+    <ul style="margin:0 0 0 0; padding-left:22px; color:#374151;">
+      <li style="margin-bottom:12px;">Make sure Half-Life: Alyx or the Source 2 Filmmaker tools are already installed on the same computer. The tool needs to know where the game lives so it can place converted files in the right spot.</li>
+      <li style="margin-bottom:12px;">Gather the Source 1 files you want to convert into one folder first. Keeping them together makes selecting them much faster.</li>
+      <li style="margin-bottom:12px;">Keep a backup copy of your original files. Conversions create new files rather than overwriting old ones, but a backup is always a sensible habit.</li>
+      <li style="margin-bottom:0;">Close any open game or editor windows while converting. Files that are in use cannot always be written to, and closing them avoids errors.</li>
+    </ul>
+
+  </div>
+
+  <div style="background-color:#ffffff; border-radius:16px; box-shadow:0 6px 24px rgba(15,23,42,0.08); padding:36px 28px; margin-bottom:28px;">
+
+    <h2 style="font-size:1.5rem; margin:0 0 16px 0; color:#111827; font-weight:700;">🛠️ Using the Tool</h2>
+
+    <p style="margin:0 0 16px 0;">Once the application is open, the workflow is short and repeatable:</p>
+
+    <ol style="margin:0 0 16px 0; padding-left:22px; color:#374151;">
+      <li style="margin-bottom:14px;"><strong>Choose your source folder.</strong> Click the browse button and select the folder holding the models, textures, materials or particles you want to move over.</li>
+      <li style="margin-bottom:14px;"><strong>Choose your output folder.</strong> This is where the converted files will appear. Many people point this at their active add-on or project folder so the results are ready to test immediately.</li>
+      <li style="margin-bottom:14px;"><strong>Pick what to convert.</strong> Select models, textures, materials or particles — or let the tool handle everything it finds.</li>
+      <li style="margin-bottom:14px;"><strong>Press the convert button.</strong> A progress indicator shows what is happening. Depending on how many files you selected, this can take a few seconds or a few minutes.</li>
+      <li style="margin-bottom:0;"><strong>Check the results.</strong> Open your project in the game or in Source 2 Filmmaker and load the asset. If it appears with the correct shape and colours, the conversion worked.</li>
+    </ol>
+
+    <p style="margin:0 0 0 0;">The first conversion is usually the slowest because it involves the most trial and error. After that, porting a whole batch of props becomes a routine task you can repeat in seconds.</p>
+
+  </div>
+
+  <div style="background-color:#ffffff; border-radius:16px; box-shadow:0 6px 24px rgba(15,23,42,0.08); padding:36px 28px; margin-bottom:28px;">
+
+    <h2 style="font-size:1.5rem; margin:0 0 16px 0; color:#111827; font-weight:700;">🧯 Troubleshooting</h2>
+
+    <p style="margin:0 0 16px 0;"><strong>Windows blocks the file from opening.</strong> This is the standard SmartScreen prompt for downloaded software. Click <em>More info</em>, then <em>Run anyway</em>. Running the application from a simple folder outside Program Files also helps.</p>
+
+    <p style="margin:0 0 16px 0;"><strong>An asset shows up pink or untextured.</strong> This usually means a texture did not convert or the material is pointing at the wrong name. Re-run the conversion with the whole asset folder selected so the model, its materials and its textures are all processed in the same pass.</p>
+
+    <p style="margin:0 0 16px 0;"><strong>Nothing appears in the game.</strong> Double-check that the output folder is the one the game actually reads from, and that you restarted the game or editor after converting so it picks up the new files.</p>
+
+    <p style="margin:0 0 0 0;"><strong>The tool closes unexpectedly.</strong> Move it to a folder you fully control, such as <em>C:\Source2PortTools</em>, make sure the files you are converting are not open in another program, and try again with a single asset to narrow down which file is causing the problem.</p>
+
+  </div>
+
+  <div style="background-color:#ffffff; border-radius:16px; box-shadow:0 6px 24px rgba(15,23,42,0.08); padding:36px 28px; margin-bottom:28px;">
+
+    <h2 style="font-size:1.5rem; margin:0 0 16px 0; color:#111827; font-weight:700;">❓ Frequently Asked Questions</h2>
+
+    <p style="margin:0 0 16px 0;"><strong>Do I need to know how to program?</strong> No. Everything happens through buttons in a normal window. There is nothing to type and nothing to compile.</p>
+
+    <p style="margin:0 0 16px 0;"><strong>Will this overwrite my original files?</strong> No. The tool reads your Source 1 files and produces new Source 2 files. Your originals are left untouched.</p>
+
+    <p style="margin:0 0 16px 0;"><strong>Does it work for both Alyx and Source 2 Filmmaker?</strong> Yes. Both use the same underlying file formats, so converted assets work in either one.</p>
+
+    <p style="margin:0 0 16px 0;"><strong>Can I convert a large batch at once?</strong> Yes. Point the tool at a folder and it will process everything inside it, which is much faster than doing one file at a time.</p>
+
+    <p style="margin:0 0 0 0;"><strong>Where do I get updates?</strong> The same releases page always lists the newest version. Check back there before reporting a problem, since it may already be fixed.</p>
+
+  </div>
+
+  <div style="background-color:#ffffff; border-radius:16px; box-shadow:0 6px 24px rgba(15,23,42,0.08); padding:36px 28px;">
+
+    <h2 style="font-size:1.5rem; margin:0 0 16px 0; color:#111827; font-weight:700;">📣 Feedback and Community</h2>
+
+    <p style="margin:0 0 16px 0;">If a particular model, material or effect does not convert cleanly, reporting it helps the tool improve for everyone. Head to the repository page and open an issue describing what you tried to convert, which game the asset came from, and what went wrong. Screenshots are always welcome.</p>
+
+    <p style="margin:0 0 24px 0;">The project lives at <a href="https://github.com/noorssssy/Source2PortTools" style="color:#4f46e5; font-weight:600; text-decoration:underline;">github.com/noorssssy/Source2PortTools</a>, and every download is published on the releases page.</p>
+
+    <p style="margin:0;">
+      <a href="https://github.com/noorssssy/Source2PortTools/releases" style="display:inline-block; background-image:linear-gradient(135deg,#f59e0b 0%,#dc2626 100%); color:#ffffff; text-decoration:none; font-weight:700; font-size:1.05rem; padding:16px 34px; border-radius:12px; box-shadow:0 8px 20px rgba(220,38,38,0.3);">⬇️ Download Source2PortTools Now</a>
+    </p>
+
+    <p style="margin:14px 0 0 0; font-size:0.95rem; color:#6b7280;">Visit this link to download the application.</p>
+
+  </div>
+
 </div>
 
-<!-- ==================== STICKY FILTER BAR ==================== -->
-<nav class="filters" id="filters" aria-label="Source filter"></nav>
-
-<!-- ==================== NEWS VIEW ==================== -->
-<main class="container" id="newsView">
-  <div class="status" id="status"></div>
-  <section class="hero" id="hero" aria-label="Top stories"></section>
-  <section class="grid" id="grid" aria-label="Latest stories"></section>
-</main>
-
-<!-- ==================== STOCKS VIEW ==================== -->
-<main class="container" id="stocksView" style="display: none;">
-  <div class="stock-header">
-    <h1 class="page-title" data-i18n="mktTitle">Market Data</h1>
-    <div class="stock-search-box">
-      <input type="text" id="stockSearchInput" data-i18n-ph="searchPh" placeholder="Search ticker (e.g., AAPL, BBCA.JK)…" autocomplete="off" />
-      <button type="button" id="stockSearchBtn" data-i18n="searchBtn">Search</button>
-    </div>
-  </div>
-  
-  <!-- The dashboard is dynamically generated by app.js -->
-  <div id="stockDashboard"></div>
-</main>
-
-<!-- ==================== FOOTER ==================== -->
-<footer class="footer">
-  <div class="footer-inner">
-    <span class="footer-brand">FIN<span class="accent">WIRE</span></span>
-    <p data-i18n="footer">FINWIRE — client-side market news aggregator. Data via public RSS feeds &amp; CORS proxies.</p>
-  </div>
-</footer>
-
-<script src="app.js"></script>
 </body>
 </html>
